@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="h1Center">My Calculator</h1>
+    <table class="container">
+        <tr>
+            <td><input type="button" value="C" onclick="clearResult()" id="clear"></td>
+            <td colspan="4"><input type="text" id="outcome"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="+" onclick="numbres('+')"></td>
+            <td><input type="button" value="1" onclick="numbres('1')"></td>
+            <td><input type="button" value="2" onclick="numbres('2')"></td>
+            <td><input type="button" value="3" onclick="numbres('3')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="-" onclick="numbres('-')"></td>
+            <td><input type="button" value="4" onclick="numbres('4')"></td>
+            <td><input type="button" value="5" onclick="numbres('5')"></td>
+            <td><input type="button" value="6" onclick="numbres('6')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="*" onclick="numbres('*')"></td>
+            <td><input type="button" value="7" onclick="numbres('7')"></td>
+            <td><input type="button" value="8" onclick="numbres('8')"></td>
+            <td><input type="button" value="9" onclick="numbres('9')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="/" onclick="numbres('/')"></td>
+            <td><input type="button" value="." onclick="numbres('.')"></td>
+            <td><input type="button" value="0" onclick="numbres('0')"></td>
+            <td><input type="button" value="=" onclick="equal()"></td>
+        </tr>
+    </table>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
